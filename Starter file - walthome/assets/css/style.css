@@ -147,7 +147,116 @@ body{
 }
 .headline-medium{
   font-size: var(--fs-headline-madium);
-  line-height: var(--lh-headline-large);
+  line-height: var(--lh-headline-medium);
   font-weight: var(--weight-bold);
   letter-spacing: var(--traking-n-025);
 }
+.headline-medium{
+  font-size: var(--fs-headline-small);
+  line-height: var(--lh-headline-small);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--traking-n-025);
+}
+.title-large{
+  font-size: var(--fs-title-large);
+  line-height: var(--fs-title-large);
+  font-weight: var(--weight-semiBold);
+}
+.title-medium{
+  font-size: var(--fs-title-medium);
+  line-height: var(--fs-title-medium);
+  font-weight: var(--weight-semiBold);
+}
+.title-small{
+  font-size: var(--fs-title-small);
+  line-height: var(--fs-title-small);
+  font-weight: var(--weight-bold);
+}
+.body-large{
+  font-size: var(--fs-body-large);
+  line-height: var(--fs-body-large);
+  font-weight: var(--weight-regular);
+}
+.body-medium{
+  font-size: var(--fs-body-medium);
+  line-height: var(--fs-body-medium);
+  font-weight: var(--weight-regular);
+}
+.label-medium{
+  font-size: var(--fs-label-medium);
+  line-height: var(--fs-label-medium);
+  font-weight: var(--fs-label-medium);
+}
+.label-large{
+  font-size: var(--fs-label-lar);
+  line-height: var(--fs-label-medium);
+  font-weight: var(--fs-label-medium);
+}
+/*personalization for symbols*/
+.material-symbols-rounded{
+display: block;
+width: 1em;
+height: 1em;
+overflow:hidden;
+font-variation-settings: 
+'fill'0,
+'wght'400,
+'grad'0,
+'opsz' 24;
+}
+/*conteiner-header*/
+.container{
+  
+  padding-inline: 16px;
+  max-width: 580px;
+  width: 100%;
+  margin-inline: 100%;
+
+}
+/*componemtes*/
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  height: 48px;
+  padding-inline: 24px;
+  border-radius: var(--radius-full);
+  max-width: max-content;
+  transition: var(--transition-duration-quick) var(--transition-easing-quick);
+  cursor: pointer;
+}
+.btn-fill{
+  background-color: var(--primary-100);
+  color: var(--neutral-100);
+}
+.btn-fill:where( :houver, :focus){
+  background-color: var(--primary-90);
+  box-shadow: var(--shadow-1);
+}
+.btn-fill:where( :active, :focus-visible){
+  background-color: var(--primary-80);
+}
+.btn-outline{
+  color: var(--primary-100);
+  box-shadow: inset 0 0 0 2px var(--primary-100);
+}
+.btn-outline:where( :houver, :focus){
+  background-color: var(--primary-90);
+  box-shadow: var(--shadow-1);
+}
+.btn-outline:where( :active, :focus-visible){
+  background-color: var(--primary-80);
+  color: var(--neutral-100);
+}
+.icon-btn{
+  height: 40px;
+  width: 40px;
+  display: grid;
+  place-items: center;
+  background-color: var(--neutral-100);
+  color: var(--neutral-10);
+  border-radius:var(--radius-small);
+  box-shadow: var(--shadow-3);
+}
+/*
