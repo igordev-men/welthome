@@ -15,8 +15,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0..1,0" />
-    
-    <!--aa-->
     <!--acess pafh for css -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- preload to images-->
@@ -30,13 +28,13 @@
             <a href="#" class="logo">
                 <img src="assets/images/logo.png" width="190" height="28" alt="Wealthome">
             </a>
-            <nav class="navbar active" data-navbar>
+            <nav class="navbar" data-navbar>
                 <ul class="navbar-list">
-                    <li class="label-large" ><a href="index.html">Home</a></li>
-                    <li class="label-large" ><a href="#">Rent</a></li>
-                    <li class="label-large" ><a href="section-1">Sell</a></li>
-                    <li class="label-large" ><a href="buy">Buy</a></li>
-                    <li class="label-large" ><a href="buy">About</a></li>
+                    <li class="label-large navbar-link active" ><a href="index.html">Home</a></li>
+                    <li class="label-large navbar-link" ><a href="#">Rent</a></li>
+                    <li class="label-large navbar-link" ><a href="section-1">Sell</a></li>
+                    <li class="label-large navbar-link" ><a href="buy">Buy</a></li>
+                    <li class="label-large navbar-link" ><a href="buy">About</a></li>
                 </ul>
 
                 <div class="navbar-wrapper">
@@ -53,15 +51,71 @@
         </div>
 
     </header>
-    <script>
-        const header = document.querySelector('.header'); 
-        const navToggleBtn = document.querySelector('.nav-toggle-btn'); 
-        const navbar = document.querySelector('.navbar'); 
-        navToggleBtn.addEventListener('click', () => {
-          header.classList.toggle('active');
-          navbar.classList.toggle('active');
-        });
-      </script>
+    <main>
+        <article>
+            <section class="hero">
+                <div class="conteiner">
+                    <div class="hero-content">
+
+                        <h1 class="headline-large hero-title">
+                            Find a place where you can be yourself.
+                        </h1>
+                        <p class="body-large hero-text">
+                            If you're looking for a place where you can be yourself, don't give up. Keep searching until you find a place that feels like home.
+                        </p>
+                        <form action="./" method="get" class="sherch-bar">
+                           <!--você quer... -->
+                            <label class="search-item">
+                                <span class="label-large label">
+                                    Want to
+                                </span>
+                                <select name="want-to"class="search-item-field body-medium">
+                                    <option value="buy" selected>Buy</option>
+                                    <option value="sell" selected>Sell</option>
+                                    <option value="rent" selected>Rent</option>
+                                </select>
+                            </label>
+                            <span class="material-symbols-rounded" aria-hidden="true">real_estate_agent</span>
+                            <!--tipo de propriedade-->
+                            <label class="search-item">
+                                <span class="label-large label">
+                                    Property type
+                                </span>
+                                <select name="property-type"class="search-item-field body-medium">
+                                    <option value="any" selected>Any</option>
+                                    <option value="houses" selected>Houses</option>
+                                    <option value="apartments" selected>Apartments</option>
+                                    <option value="villas" selected>Villas</option>
+                                    <option value="tonwhome" selected>Tonwhome</option>
+                                    <option value="bungalow" selected>Bungalow</option>
+                                    <option value="loft" selected>Loft</option>
+                                </select>
+                                <span class="material-symbols-rounded" aria-hidden="true">gite</span>
+                            </label>
+                            <!--pesquisa de endereço-->
+                            <label>
+                                <span class="label-large label">
+                                Location
+                                </span>
+                                <input type="text" name="location" placeholder="Street, City, Zip..." class="search-item-field body-medium">
+                                <span class="material-symbols-rounded" aria-hidden="true">location_on</span>
+
+                            </label>
+                            <button type="submit" class="search-btn">
+                                <span class="material-symbols-rounded" aria-hidden="true">search</span>
+                                <span class="label-medium">
+                                    Search 
+                                </span>
+                            </button>
+                        </form>
+                        <img src="assets/images/hero.png" alt="hero-img" width="816"height="612" role="presentation"class="hero-banner">
+                        <img src="assets/images/bg-pattern.png" alt="hero-img" width="1260"height="840" role="presentation"class="bg-pattern">
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <script src="assets/js/script.js"></script>
       
 </body>
 </html>
