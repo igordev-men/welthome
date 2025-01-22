@@ -188,9 +188,9 @@
     font-weight: var(--fs-label-medium);
   }
   .label-large{
-    font-size: var(--fs-label-lar);
-    line-height: var(--fs-label-medium);
-    font-weight: var(--fs-label-medium);
+    font-size: var(--fs-label-large);
+    line-height: var(--fs-label-large);
+    font-weight: var(--weight-bold);
   }
   /*personalization for symbols*/
   .material-symbols-rounded{
@@ -207,7 +207,7 @@
   /*conteiner-header*/
   .container {
     padding-inline: 16px; 
-    max-width: 1200px; 
+     
     width: 100%; 
     margin-inline: auto; 
     display: flex; 
@@ -293,10 +293,12 @@
   
   .header .container {
     position: relative;
+    background-image: var(--gradient);
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 100%;
+
   }
   
   .nav-toggle-btn .close,
@@ -378,20 +380,28 @@
   /* search bar */
   .search-bar{
     background-color: var(--white);
-    display:grid;
-    padding:8px;
+    display:flex;
+    flex-wrap: wrap;
+  
+    padding: 8px; 
+    align-items: center;
+    justify-content: space-between;
     border-radius:16px;
     box-shadow:var(--shadow-4);
     color: var(--neutral-50);
+    flex-direction:row;
+    margin: 70px;
+    width: 100%;
+    max-width: 900px;
     }
   
     .search-item{
-      position:relative;
-      color: var(--neutral-50);
+      display: block;
+      color: var(--neutral-5);
     }
     .search-item .search-item-field{
-      height:76px;
-      padding: 40px 16px 12px;
+      height:auto;
+      padding:10px;
       border-radius: 12px;
       transition: var(--transition-duration-quick) var(--transition-easing-quick);
       cursor:pointer;
@@ -402,4 +412,22 @@
     .search-item:where(.label, .material-symbols-rounded){
       position: absolute;
       pointer-events: none;
+    }
+    .search-btn{
+      /*tamanho e alinhamento*/
+      display: flex;
+      align-items: center;
+      padding: 20px 40px;
+      border-radius: 10px;
+      gap:1em;
+      /*cores*/
+      background-color: var(--primary-100); 
+      box-shadow:var(--shadow-2);
+      color: var(--white);
+      
+    }
+    .material-symbols-rounded{
+      color: var(--primary-70);
+      display: block;
+      
     }
