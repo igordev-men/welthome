@@ -366,16 +366,13 @@
     padding-block: 60px;
     overflow: hidden;
     isolation: isolate;
-    }  
+    padding-top: 100px;
+  }  
 
-    .hero-banner{
-
-      
-        margin-left: 900px; /* Move a imagem para a direita */
-        margin-top: -400px;  /* Move a imagem para baixo */
-    
-    
-  }
+ .hero-banner{
+        margin-left: 940px; /* Move a imagem para a direita */
+        margin-top: -430px;  /* Move a imagem para baixo */ 
+ }
    
   .hero-title{
     color: var(--neutral-100);
@@ -461,5 +458,15 @@
       color: var(--primary-90);
       display: block;
       
+    }
+
+    /* section property*/
+    .section-tittle{
+      display: flex;
+      
+      padding: 0;
+    }
+    .section-text{
+
     }
  
