@@ -359,19 +359,18 @@
 
   /* hero section */
   .hero{
-    display: grid;
+    display: flex;
     position: relative;
     background-image: var(--gradient);
     color:var(--neutral-90);
-    padding-block: 60px;
+    padding-block: 5px;
     overflow: hidden;
     isolation: isolate;
-    padding-top: 100px;
   }  
 
  .hero-banner{
         margin-left: 940px; /* Move a imagem para a direita */
-        margin-top: -430px;  /* Move a imagem para baixo */ 
+        margin-top: -430px;  /* Move a imagem para baixo */       
  }
    
   .hero-title{
@@ -462,11 +461,13 @@
 
     /* section property*/
     .section-tittle{
-      display: flex;
-      
-      padding: 0;
+      margin-left: 150px;
     }
     .section-text{
-
+      display:flex;
+      justify-items: flex-end;
+      text-align: left;
+      margin-left: 150px;
+      padding-top: 1cap;
     }
  
