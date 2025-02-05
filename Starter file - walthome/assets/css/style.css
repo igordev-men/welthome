@@ -546,3 +546,198 @@
   flex-direction:row;
   padding-top: 1cap;
 }
+/* ========================== */
+/* 📌 ESTILOS PARA TELAS PEQUENAS 📱 */
+/* ========================== */
+@media (max-width: 1024px) {
+  
+  /* 🔹 HEADER */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* 🔹 HERO SECTION */
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .hero-title {
+    font-size: 32px;
+    padding-right: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .hero-text {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .hero-banner {
+    margin: 0 auto;
+    width: 90%;
+    height: auto;
+    max-width: 500px;
+  }
+
+  /* 🔹 SEARCH BAR */
+  .search-bar {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 16px;
+  }
+
+  .search-item {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-btn {
+    width: 100%;
+    text-align: center;
+    padding: 14px;
+  }
+
+  /* 🔹 LISTA DE CASAS */
+  .list-homes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .home-box {
+    width: 90%;
+    max-width: 400px;
+  }
+
+  /* 🔹 SEÇÃO "BEST HOME" */
+  .section-text-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .btn-explore {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+/* ========================== */
+/* 📌 ESTILOS PARA TELAS MENORES (MOBILE) 📱 */
+/* ========================== */
+@media (max-width: 768px) {
+  
+  /* 🔹 HEADER */
+  .header {
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background-color: var(--neutral-100);
+    box-shadow: var(--shadow-3);
+    transition: right 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar.active {
+    right: 0;
+  }
+
+  .nav-toggle-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 10;
+  }
+
+  /* 🔹 HERO SECTION */
+  .hero {
+    padding: 20px;
+  }
+
+  .hero-title {
+    font-size: 28px;
+  }
+
+  .hero-banner {
+    max-width: 100%;
+  }
+
+  /* 🔹 SEARCH BAR */
+  .search-bar {
+    padding: 12px;
+    max-width: 100%;
+  }
+
+  .search-btn {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* 🔹 LISTA DE CASAS */
+  .list-homes {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-box {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  /* 🔹 SEÇÃO "BEST HOME" */
+  .section-tittle {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .section-text {
+    text-align: center;
+  }
+
+  .btn-explore {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+/* ========================== */
+/* 📌 ESTILOS PARA TELAS MUITO PEQUENAS (EX: CELULARES ANTIGOS) 📱 */
+/* ========================== */
+@media (max-width: 480px) {
+  
+  /* 🔹 HERO SECTION */
+  .hero-title {
+    font-size: 24px;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  /* 🔹 SEARCH BAR */
+  .search-bar {
+    padding: 10px;
+  }
+
+  /* 🔹 LISTA DE CASAS */
+  .home-box {
+    width: 100%;
+    max-width: 320px;
+  }
+}
